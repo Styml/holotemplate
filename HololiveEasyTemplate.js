@@ -36,5 +36,6 @@ if (window.top !== window.self) {
 		}
 		addImage("https://cdn.discordapp.com/attachments/960048602540040202/960107554510372875/LeftArea.png", 165, 715);
 		addImage("https://cdn.discordapp.com/attachments/960048602540040202/960107554757808188/RightArea.png", 1332, 880);
+		addImage("https://github.com/Styml/holotemplate/blob/main/templates/FLARE-1365_%20869.png", 1365, 869);
 	}, false);
 }
