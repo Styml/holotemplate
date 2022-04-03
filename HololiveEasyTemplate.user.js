@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Hololive Easy Template
+// @name         Hololive Easy Template Test
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.3.1
 // @description  Trying
 // @author       TellowKrinkle, CyberiumShadow
 // @match        https://hot-potato.reddit.com/embed*
