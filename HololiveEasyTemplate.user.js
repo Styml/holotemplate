@@ -34,8 +34,8 @@ if (window.top !== window.self) {
 			};
 			img.src = src;
 		}
-		addImage("https://github.com/Styml/holotemplate/blob/main/templates/Further%20archives%20to%20our%20stable%20territory.png.1-1.png", 0, 0);
+		addImage("https://github.com/Styml/holotemplate/raw/main/templates/Further%20archives%20to%20our%20stable%20territory.png.1-1.png", 0, 0);
 		// addImage("https://cdn.discordapp.com/attachments/960048602540040202/960107554757808188/RightArea.png", 1332, 880);
-		addImage("https://github.com/Styml/holotemplate/blob/main/templates/FLARE-1365_%20869.png", 1365, 869);
+		addImage("https://github.com/Styml/holotemplate/raw/main/templates/FLARE-1365_%20869.png", 1365, 869);
 	}, false);
 }
