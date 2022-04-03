@@ -18,10 +18,11 @@ if (window.top !== window.self) {
         const container = canvas.shadowRoot.querySelector('.container');
         function addImage(src, posX, posY) {
             let img = document.createElement("img");
+            const canvas = document.createElement("canvas");
+            container.appendChild(canvas);
             img.onload = () => {
                 const width = img.width;
                 const height = img.height;
-                const canvas = document.createElement("canvas");
                 canvas.width = width * 3;
                 canvas.height = height * 3;
                 canvas.style = `position: absolute; left: ${posX}px; top: ${posY}px; image-rendering: pixelated; width: ${width}px; height: ${height}px;`;
@@ -32,7 +33,6 @@ if (window.top !== window.self) {
                         ctx.drawImage(img, x, y, 1, 1, x * 3 + 1, y * 3 + 1, 1, 1);
                     }
                 }
-                container.appendChild(canvas);
             };
             img.src = src;
         }
