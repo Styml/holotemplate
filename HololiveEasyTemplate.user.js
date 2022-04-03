@@ -10,6 +10,7 @@
 // ==/UserScript==
 if (window.top !== window.self) {
 	window.addEventListener('load', () => {
+		let templates;
 		const opacity = 1;
 		const camera = document.querySelector("mona-lisa-embed").shadowRoot.querySelector("mona-lisa-camera");
 		const canvas = camera.querySelector("mona-lisa-canvas");
@@ -34,6 +35,24 @@ if (window.top !== window.self) {
 			};
 			img.src = src;
 		}
+		function setTemplate(document) {
+			templates = document
+		}
+		function httpGetAsync(theUrl, callback)
+			{
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.onreadystatechange = function() { 
+					if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+						callback(xmlHttp.responseText);
+				}
+				xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+				xmlHttp.send(null);
+			}
+
+		templates = httpGetAsync("https://raw.githubusercontent.com/DutchEllie/holotemplate/main/all-templates.csv", setTemplate)
+		console.log(templates)
 		/* parse CSV here */
+		
 	}, false);
 }
+
