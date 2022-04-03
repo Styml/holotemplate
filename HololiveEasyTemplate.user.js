@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.3
 // @description  Trying
-// @author       TellowKrinkle
+// @author       TellowKrinkle, CyberiumShadow
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        GM_xmlhttpRequest
